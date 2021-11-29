@@ -31,7 +31,7 @@ An exported Postman collection is attached that demonstrates this request and it
 - Please make frequent and descriptive git commits.
 - Use the architecture you’re comfortable with.
 - Use any dependencies that you find useful to complete the task.
-- Please use Next.js/React and Typescript.
+- Please use Next.js/React and Typescript or Ember.js.
 - Feel free to add functionality as you have time, but the functionality description above is priority.
 
 ## What we’re looking for
@@ -39,7 +39,8 @@ An exported Postman collection is attached that demonstrates this request and it
 - Visual design mostly matches designs (pixel perfect isn’t required since specs are rough, but approximately the same)
 - An ability to think through all potential states
 - Code design and style should be consistent and reasonable
+- In the README of the project, describe exactly how to run the application
 
-When complete, please zip the project (including the `.git` directory) and send it back.
+When complete, please push your code to Github and send the link to the project or zip the project (including the `.git` directory) and send it back.
 
 Thank you and please ask if you have any questions!
