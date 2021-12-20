@@ -44,3 +44,11 @@ An exported Postman collection is attached that demonstrates this request and it
 When complete, please push your code to Github and send the link to the project or zip the project (including the `.git` directory) and send it back.
 
 Thank you and please ask if you have any questions!
+
+## Extra Credit 🚀🚀🚀
+- Implement a cool new feature we didn't ask for!
+- What would you do differently if you had a whole week to work on this?
+- What extra features would you implement if you had to consider:
+  - Performance
+  - Aesthetics
+  - Usability
