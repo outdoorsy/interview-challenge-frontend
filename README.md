@@ -13,7 +13,7 @@ See https://github.com/outdoorsy/interview-challenge-frontend/blob/master/API.md
 - Build this as if it will be maintained for a while (code organization, maintanability, extensibility).
 - **Ensure strong type coverage with TypeScript**.
 - Refine types that are unknown to the client.
-- Debouncing input and making limited requests to the server.
+- Performant API requests
 ## What we’re looking for
 - Functionality of project matches description above
 - Visual design (mostly, not pixel perfect) matches designs
