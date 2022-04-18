@@ -1,4 +1,4 @@
-# Typecript Code Challenge
+# Typescript Code Challenge
 
 Thanks for applying for a frontend developer role at Outdoorsy. We've put together this code challenge. It should take around two hours to complete.
 
