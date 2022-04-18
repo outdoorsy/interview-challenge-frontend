@@ -14,6 +14,7 @@ See https://github.com/outdoorsy/interview-challenge-frontend/blob/master/API.md
 - **Ensure strong type coverage with TypeScript**.
 - Refine types that are unknown to the client.
 - Performant API requests
+- Custom React hook, if applicable
 ## What we’re looking for
 - Functionality of project matches description above
 - Visual design (mostly, not pixel perfect) matches designs
@@ -23,7 +24,7 @@ See https://github.com/outdoorsy/interview-challenge-frontend/blob/master/API.md
 ## Notes
 - Please make frequent and descriptive git commits.
 - Use any dependencies that you find useful to complete the task.
-- Please use **Next.js/React (or Ember.js) and Typescript**.
+- Please use **Next.js/React and Typescript**.
 
 When complete, please push your code to Github and send the link to the project or zip the project (including the `.git` directory) and send it back.
 
