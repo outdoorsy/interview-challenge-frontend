@@ -14,7 +14,6 @@ See https://github.com/outdoorsy/interview-challenge-frontend/blob/master/API.md
 - **Ensure strong type coverage with TypeScript**.
 - Refine types that are unknown to the client.
 - Performant API requests
-- Custom React hook, if applicable
 ## What we’re looking for
 - Functionality of project matches description above
 - Visual design (mostly, not pixel perfect) matches designs
