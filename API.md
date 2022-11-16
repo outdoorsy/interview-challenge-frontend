@@ -8,6 +8,10 @@ Optional: `page[limit]` - an integer that sets requested maximum result count
 Optional: `page[offset]` - an integer that sets the index of the first result
 (Example: a "third page" of 8 results would have limit of 8, offset of 16)
 
+**Note**: If there aren`t any RV listed in your region, you probably will not get any results because of the geolocation durring search.
+
+You can avoid this by using parameter `address` and specify a city or region to search for. For example `address=Atlanta` 
+
 *Response:*
 The `data` object is an array of rental results.
 Find name of rental at `data[].attributes.name`
