@@ -22,7 +22,7 @@ function App(): JSX.Element {
   useEffect(() => {
     const fetchRentals = async () => {
       try {
-        let getRentalsUrl = 'https://search.outdoorsy.com/rentals?filter[keywords]=trailer&page[limit]=8&page[offset]=8';
+        let getRentalsUrl = 'https://search.outdoorsy.com/rentals?page[limit]=8&page[offset]=8';
         if (searchRental) {
           getRentalsUrl += `&filter[keywords]=${searchRental}`;
         }
