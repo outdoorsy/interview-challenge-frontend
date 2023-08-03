@@ -44,3 +44,10 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Things I would have done differently if I had more time.
+
+1. Added Unit tests
+2. Possibly create a loader 
+3. Improve styling
+4. Be more descriptive for each rental item
