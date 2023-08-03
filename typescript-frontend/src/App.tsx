@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import './App.css'; 
 type attributes = {
   name: string;
   description: string;
@@ -40,23 +40,31 @@ function App(): JSX.Element {
   }, [searchRental]);
 
   return (
-    <div>
+    <div className="center-content">
       <h1>Trailer Rentals</h1>
       <input
+        className="search-bar"
         type="text"
         placeholder="Search rentals"
         value={searchRental}
         onChange={(e) => setSearchRental(e.target.value)}
       />
-      <ul>
+      <ul className="rental-list">
         {rentals.map(rental => (
-          <li key={rental.id}>
-            <p>{rental.attributes.name}</p>
-            <p>{rental.attributes.primary_image_url}</p>
-            <p>{rental.attributes.vehicle_make}</p>
-            <p>{rental.attributes.vehicle_model}</p>
-            <p>{rental.attributes.vehicle_title}</p>
-            <img src={rental.attributes.primary_image_url} alt={rental.attributes.name} />
+          <li key={rental.id} className="rental-item">
+            <img className="rental-image"
+              src={rental.attributes.primary_image_url}  // Replace 'original' with 'large' for a larger image
+              alt={rental.attributes.name}
+            />
+            <div className="rental-details">
+              {/* <p>{rental.attributes.vehicle_title}</p> */}
+              {/* <p>{rental.attributes.primary_image_url}</p>
+              <p>{rental.attributes.vehicle_make}</p>
+              <p>{rental.attributes.vehicle_model}</p> */}
+              {<p>{rental.attributes.name}</p>}
+
+            </div>
+
           </li>
         ))}
       </ul>
