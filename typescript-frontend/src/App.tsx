@@ -16,11 +16,18 @@ interface Rental {
 
 function App(): JSX.Element {
   const [rentals, setRentals] = useState<Rental[]>([]);
+  const [searchRental, setSearchRental] = useState<string>('');
+
 
   useEffect(() => {
     const fetchRentals = async () => {
       try {
-        const response = await fetch('https://search.outdoorsy.com/rentals?filter[keywords]=trailer&page[limit]=8&page[offset]=8');
+        let getRentalsUrl = 'https://search.outdoorsy.com/rentals?filter[keywords]=trailer&page[limit]=8&page[offset]=8';
+        if (searchRental) {
+          getRentalsUrl += `&filter[keywords]=${searchRental}`;
+        }
+
+        const response = await fetch(getRentalsUrl)
         const jsonData = await response.json();
         console.log(jsonData.data)
         setRentals(jsonData.data);
@@ -30,11 +37,17 @@ function App(): JSX.Element {
     };
 
     fetchRentals();
-  }, []);
+  }, [searchRental]);
 
   return (
     <div>
       <h1>Trailer Rentals</h1>
+      <input
+        type="text"
+        placeholder="Search rentals"
+        value={searchRental}
+        onChange={(e) => setSearchRental(e.target.value)}
+      />
       <ul>
         {rentals.map(rental => (
           <li key={rental.id}>
